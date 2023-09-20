@@ -3,22 +3,40 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+UML:
+---------------------------------
+|        PhoneContact           |
+---------------------------------
+| - phoneNumber: String         |
+| - feedback: List<Feedback>    |
+| - isSpam: boolean             |
+---------------------------------
+| + addFeedback(feedback: Feedback)|
+| + isSpam(): boolean           |
+---------------------------------
 
-* Ruby version
+---------------------------------
+|         Feedback              |
+---------------------------------
+| - user: User                  |
+| - comment: String             |
+| - rating: int                 |
+| - date: Date                  |
+---------------------------------
+| + getComment(): String        |
+| + getRating(): int            |
+| + getDate(): Date             |
+| + getUser(): User             |
+---------------------------------
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+---------------------------------
+|            User               |
+---------------------------------
+| - username: String            |
+| - email: String               |
+| - password: String            |
+---------------------------------
+| + getUsername(): String       |
+| + getEmail(): String          |
+| + getPassword(): String       |
+---------------------------------
